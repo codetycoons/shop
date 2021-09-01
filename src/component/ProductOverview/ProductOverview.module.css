@@ -1,0 +1,108 @@
+.ProductOverview {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 4rem 5% 2rem 5%;
+  max-width: 90.66667rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.ProductOverview .banner {
+  flex: 1;
+  text-align: center;
+}
+
+.ProductOverview .banner img {
+  width: 400px;
+  height: 400px;
+}
+
+.ProductOverview .info {
+  margin-left: 2.66667rem;
+  flex: 0.8;
+}
+
+.ProductOverview .info .title {
+  color: #153a5b;
+  font-weight: bold;
+  font-size: 2.26667rem;
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+.ProductOverview .info .price {
+  color: #153a5b;
+  font-size: 1.33333rem;
+  line-height: 1.2;
+}
+
+.ProductOverview .info .description {
+  color: #5a5e60;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.4rem 0rem 0rem 0rem;
+}
+
+.ProductOverview .info .description p {
+  color: rgb(21, 58, 91);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.ProductOverview .info .category {
+  color: #5a5e60;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.4rem 0rem 0rem 0rem;
+}
+
+.ProductOverview .button {
+  text-align: center;
+  padding: 10px 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: cursive;
+  border: 2px solid #153a5b;
+  transition: all 0.2s linear;
+}
+
+.ProductOverview .addCart {
+  color: #153a5b;
+}
+
+.ProductOverview .addCart:hover {
+  border: 2px solid #cccccc;
+}
+
+.ProductOverview .buyNow {
+  background: #153a5b;
+  color: white;
+}
+
+.ProductOverview .buyNow:hover {
+  background: white;
+  color: #153a5b;
+}
+
+@media screen and (max-width: 850px) {
+  .ProductOverview {
+    flex-direction: column;
+  }
+
+  .ProductOverview .info {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ProductOverview .banner img {
+    width: 300px;
+    height: 300px;
+  }
+}
